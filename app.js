@@ -4,7 +4,7 @@ console.log("hello");
 let button = document.getElementsByClassName("_2KpZ6l _2U9uOA _3v1-ww");
 if (button.length) {
   button[0].addEventListener("click", () => {
-    console.log("helllllllllo");
+    console.log("helllllllll");
     let elements = document.getElementsByClassName("B_NuCI");
     if (elements.length > 0) {
       let text = elements[0].innerText;
