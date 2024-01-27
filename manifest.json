@@ -22,6 +22,10 @@
     {
       "matches": ["*://www.amazon.in/*"],
       "js": ["app1.js"]
+    },
+    {
+      "matches": ["https://www.youtube.com/paid_memberships"],
+      "js": ["content.js"]
     }
   ]
 }
