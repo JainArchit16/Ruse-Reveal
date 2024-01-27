@@ -6,7 +6,7 @@
   "action": {
     "default_popup": "index.html"
   },
-  "permissions": ["scripting", "activeTab", "notifications"],
+  "permissions": ["scripting", "activeTab", "notifications","tabs"],
   "background": {
     "service_worker": "background.js",
     "type": "module"
@@ -16,6 +16,9 @@
       "matches": ["*://www.flipkart.com/*"],
       "js": ["app.js"]
     },
+    {
+      "matches":["https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART"],
+      "js":["remove.js"]},
     {
       "matches": ["*://www.amazon.in/*"],
       "js": ["app1.js"]

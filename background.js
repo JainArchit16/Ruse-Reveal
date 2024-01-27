@@ -6,6 +6,9 @@ chrome.runtime.onMessage.addListener((data) => {
   if (data.type === "notification") {
     console.log(data.id);
     console.log(data.options);
+
+    chrome.notifications.create(data.id, data.options);
+  } else if (data.type === "id") {
     chrome.notifications.create(data.id, data.options);
   }
 });

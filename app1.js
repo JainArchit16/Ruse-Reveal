@@ -8,7 +8,6 @@ if (button) {
     console.log("helllllllllo");
     let elements = document.getElementById("productTitle");
     console.log("hello ", elements.innerText);
-    // alert("");
     if (elements) {
       let text = elements.innerText;
       console.log(text);
