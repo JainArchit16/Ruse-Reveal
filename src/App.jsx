@@ -66,7 +66,7 @@ function App() {
       <div className="card">{/* <button onClick={func}></button> */}</div>
       {console.log(data, "byeeeee")}
       {console.log(old, "it is old")}
-      {data ? (
+      {data.length ? (
         // Use parentheses for conditional rendering
         <>
           {data.map((item, index) => (
