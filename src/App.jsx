@@ -15,11 +15,11 @@ export default class App extends Component {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route exact path="/Home" element={<Home />}></Route>
-            <Route exact path="/" element={<Home />}></Route>
+            <Route path="/" element={<Home />}></Route>
             <Route exact path="/Cart" element={<Cart />}></Route>
             <Route exact path="/Button" element={<Button />}></Route>
             <Route exact path="/Review" element={<Review />}></Route>
+            <Route path="/*" element={<Home />}></Route>
           </Routes>
         </BrowserRouter>
       </>
