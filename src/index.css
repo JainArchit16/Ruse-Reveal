@@ -175,3 +175,12 @@ input[type=submit] {
 background-color: #216ab3;
 border-color:#216ab3 ;
 }
+
+.old{
+  display: flex;
+  color: red;
+}
+.display{
+  display: flex;
+  color: white;
+}
