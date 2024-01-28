@@ -1,6 +1,5 @@
 import { Component } from "react";
-
-import star from "../assets/star2.png";
+import ReactStars from "react-stars";
 
 export class Api extends Component {
   constructor() {
@@ -10,6 +9,7 @@ export class Api extends Component {
       reviews: [],
       count: "0",
       rate: "0",
+      ratingChanged: "0",
     };
   }
 
@@ -58,11 +58,16 @@ export class Api extends Component {
                 rating - {this.state.rate}{" "}
               </span>
             </h>
-            <br />
-            <img
-              src={star}
-              style={{ float: "right", height: "15px", width: "65px" }}
-            />
+            <s>
+              <ReactStars
+                count={5}
+                value={parseFloat(this.state.rate)}
+                size={20}
+                edit={false}
+                color2={"#ffd700"} // Color for filled stars
+              />
+            </s>
+
             <br />
             <hr
               style={{

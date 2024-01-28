@@ -22,7 +22,10 @@ function App() {
         type: "id",
         id: Date.now().toString(),
       });
-      setData(result);
+      if (result) {
+        setData(result);
+      }
+
       console.log(typeof result, "jkshkjdah");
     };
 
@@ -84,27 +87,50 @@ function App() {
         <div className="card">{/* <button onClick={func}></button> */}</div>
         {console.log(data, "byeeeee")}
         {console.log(old, "it is old")}
-        {data.length ? (
+        {data && data.length ? (
           // Use parentheses for conditional rendering
           <>
-            {data.map((item, index) => (
-              <div
-                key={index}
-                className={old && old.includes(index) ? "old" : "display"}
-              >
-                <div style={{ textAlign: "center" }}>{item.message}</div>
+            <div className="product-list">
+              {data.map((item, index) => (
                 <div
-                  style={{ textAlign: "center" }}
-                >{`price:${item.amount}`}</div>
-                <div style={{ textAlign: "center" }}>
-                  {new Date(item.date).toDateString()}
+                  key={index}
+                  className={
+                    old && old.includes(index) ? "old" : "product-item"
+                  }
+                >
+                  <h3 style={{ textAlign: "center", width: "70%" }}>
+                    {item.message}
+                  </h3>
+                  <p
+                    style={{
+                      textAlign: "center",
+                      fontWeight: "bold",
+                      width: "15%",
+                    }}
+                  >{`price:${item.amount}`}</p>
+                  <p
+                    style={{
+                      textAlign: "center",
+                      fontStyle: "italic",
+                      width: "15%",
+                    }}
+                  >
+                    {new Date(item.date).toDateString()}
+                  </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
             {
-              <div style={{ textAlign: "center", color: "white" }}>
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "white",
+                  fontWeight: "bold",
+                }}
+              >
                 Total Amount: ₹{total}
-              </div>
+              </h3>
             }
           </>
         ) : (
