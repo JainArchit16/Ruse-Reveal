@@ -11,7 +11,7 @@ function App() {
     const currentDate = new Date();
     const inputDate = new Date(dateString);
     const differenceInMilliseconds = currentDate - inputDate;
-    const differenceInDays = differenceInMilliseconds / (1000 * 60);
+    const differenceInDays = differenceInMilliseconds / (1000 * 10);
 
     return differenceInDays >= 1;
   };
