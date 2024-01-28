@@ -1,30 +1,16 @@
 import { Link } from "react-router-dom";
-
+import css from '../index.css';
 const Navbar = () => {
   return (
-    <ul
-      style={{
-        backgroundColor: "#56ab98",
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
-      <li>
-        <Link to="/Home">Home</Link>
-      </li>
-      <li>
-        <Link to="/Cart">Cart</Link>
-      </li>
-      <li>
-        <Link to="/Button">Button</Link>
-      </li>
-      <li>
-        <Link to="/Review">Review</Link>
-      </li>
-      <li>
-        <Link to="/Price">Price</Link>
-      </li>
-    </ul>
+<nav>
+  <Link to="/Home">Home</Link>
+  <Link to="/Cart">Cart</Link>
+	<Link to="/Button">Button</Link>
+	<Link to="/Review">Review</Link>
+	<Link to="/Price">Price</Link>
+	
+	<div class="animation start-home"></div>
+</nav>
   );
 };
 

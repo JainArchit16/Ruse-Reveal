@@ -1,6 +1,7 @@
 import { Component } from "react";
-
-import star from "../assets/star.jpg";
+import css from '../index.css';
+import star from "../assets/star2.png";
+import heart from "../assets/heart.png";
 
 export class Api extends Component {
   constructor() {
@@ -48,51 +49,53 @@ export class Api extends Component {
       >
         <div
           className="row g-4 py-4 row-cols-1 row-cols-lg-3 "
-          style={{ width: "70%" }}
+          style={{ width: "500px",padding:'10px' }}
         >
-          <div className="feature col " style={{ width: "100%" }}>
+          <div className="feature col " style={{ width: "500px" }}>
             <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"></div>
-            <h3 className="fs-2" style={{ color: "#0b6199" }}>
+            <h className="f" style={{ color: "#00b9c7" }}>
               {this.state.website}({this.state.count})
               <span style={{ float: "right", color: "#bbbe10" }}>
                 rating - {this.state.rate}{" "}
               </span>
-            </h3>
+            </h><br/>
             <img
               src={star}
-              style={{ float: "right", height: "10px", width: "50px" }}
+              style={{ float: "right", height: "15px", width: "65px" }}
             />
             <br />
-            <hr style={{ borderStyle: "groove", borderWidth: "medium" }} />
+            <hr style={{ borderStyle: "groove", borderWidth: "medium", borderColor:'#00b9c7' ,backgroundColor:'#00b9c7'}} />
 
             <ol
               id="listreview"
-              style={{ backgroundColor: "white", textAlign: "left" }}
+              style={{ backgroundColor: " #2c3e50", textAlign: "left"}}
             >
               {this.state.reviews.map((review, index) => (
                 <div
                   key={index}
-                  style={{ backgroundColor: "white", textAlign: "left" }}
+                  style={{ backgroundColor: " #2c3e50", textAlign: "left",height:'47px'}}
                 >
-                  <li style={{ backgroundColor: "white", color: "#5b5fa7" }}>
+                  <li className='calledlist' style={{ backgroundColor: " #2c3e50", color: "#5b5fa7" }}>
                     {review}
                   </li>
                   <br />
                 </div>
               ))}
             </ol>
-            <div style={{ backgroundColor: "white", textAlign: "center" }}>
+            <div style={{ backgroundColor: " #2c3e50", textAlign: "center" }}>
               <br />
-
+            
               <input
                 type="text"
                 id="addreview"
                 name="review"
+                placeholder="Add Your Review"
                 style={{
-                  backgroundColor: "white",
+                  width:'400px',
+                  backgroundColor: "#a9e9f8",
                   borderRadius: "5px",
                   borderColor: "#4c5187",
-                  marginBottom: "5px",
+                  marginBottom: "10px",
                   padding: " 8px 20px",
                 }}
               />
@@ -101,8 +104,7 @@ export class Api extends Component {
                 type="submit"
                 value="ADD REVIEW"
                 style={{
-                  backgroundColor: "#4c5187",
-                  color: "white",
+                  color:'white',
                   borderRadius: "10px",
                   marginBottom: "2px",
                   padding: " 8px 20px",

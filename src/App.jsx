@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <>
         <BrowserRouter>
-          <Navbar />
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route exact path="/Cart" element={<Cart />}></Route>
