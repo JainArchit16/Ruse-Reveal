@@ -15,9 +15,9 @@ export class Api extends Component {
 
   async componentDidMount() {
     try {
-      let url = "https://rating-web3.onrender.com/getReviews/amazon";
-      let url2 = "https://rating-web3.onrender.com/getReviewCount/amazon";
-      let url3 = "https://rating-web3.onrender.com/getAverageRating/amazon";
+      let url = "https://rating-web3.onrender.com/getReviews/flipkart";
+      let url2 = "https://rating-web3.onrender.com/getReviewCount/flipkart";
+      let url3 = "https://rating-web3.onrender.com/getAverageRating/flipkart";
       let data = await fetch(url);
       let parsedData = await data.json();
       let data2 = await fetch(url2);
