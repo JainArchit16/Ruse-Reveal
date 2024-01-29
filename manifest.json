@@ -5,9 +5,9 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
-    "default_icon":"logo.png"
+    "default_icon": "logo.png"
   },
-  "permissions": ["scripting", "activeTab", "notifications","tabs"],
+  "permissions": ["scripting", "activeTab", "notifications", "tabs"],
   "background": {
     "service_worker": "background.js",
     "type": "module"
@@ -18,14 +18,17 @@
       "js": ["app.js"]
     },
     {
-      "matches":["https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART"],
-      "js":["remove.js"]},
+      "matches": [
+        "https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART"
+      ],
+      "js": ["remove.js"]
+    },
     {
       "matches": ["*://www.amazon.in/*"],
       "js": ["app1.js"]
     },
     {
-      "matches": ["https://www.youtube.com/paid_memberships"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ]
