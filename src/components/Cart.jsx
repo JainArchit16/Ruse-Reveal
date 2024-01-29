@@ -11,9 +11,9 @@ function App() {
     const currentDate = new Date();
     const inputDate = new Date(dateString);
     const differenceInMilliseconds = currentDate - inputDate;
-    const differenceInDays = differenceInMilliseconds / (1000 * 10);
+    const differenceInDays = differenceInMilliseconds / 1000;
 
-    return differenceInDays >= 1;
+    return differenceInDays >= 10;
   };
   useEffect(() => {
     const getCart = async () => {

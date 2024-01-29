@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 chrome.runtime.onMessage.addListener(gotMessage);
 
-function gotMessage(request) {
+function gotMessage(request, sender, sendResponse) {
   if (request.action === "manageMembership") {
     console.log(request.action);
 
@@ -9,7 +9,7 @@ function gotMessage(request) {
       "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading"
     )[0];
 
-    if (manage.length) {
+    if (manage) {
       manage.click();
     }
   }
@@ -21,7 +21,7 @@ function gotMessage(request) {
       "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--call-to-action yt-spec-button-shape-next--size-m"
     )[0];
 
-    if (cancelButton.length) {
+    if (cancelButton) {
       cancelButton.click();
     }
   }
@@ -33,7 +33,7 @@ function gotMessage(request) {
       "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--call-to-action yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-trailing"
     )[0];
 
-    if (playButton.length) {
+    if (playButton) {
       playButton.click();
     }
   }
