@@ -123,3 +123,7 @@ To run the Price Predictor locally, follow these steps:
 **Note**: To use this forecaster with any other CSV file, update the data source in script.js (line 10) and script.py (line 7) to match the new dataset.
 
 Happy forecasting!
+
+## Price Prediction
+
+![](.github/price.png)
