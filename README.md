@@ -127,3 +127,70 @@ Happy forecasting!
 ## Price Prediction
 
 ![](.github/price.png)
+
+
+Certainly! It seems like you want to make some improvements to your GitHub repository's README and also explain a specific feature related to managing reviews on the blockchain. Below is a revised version for your README:
+
+---
+
+
+# BlockChain Review Manager
+
+Welcome to the BlockChain Review Manager ! This project provides a decentralized solution for managing and storing reviews securely on the blockchain. You can explore the deployed BlockChain API's on Web 2.0 in action and visualize the reviews being managed on Web3.
+
+## Repository Structure
+
+- **Contract:** The blockchain contract code is available in the directory [LINK](https://github.com/JainArchit16/Ruse-Reveal/blob/main/Block3/contracts/Lock.sol). It defines the structure and logic for storing reviews on the blockchain.
+
+- **Compile.js:** This script is used to compile the blockchain contract. 
+
+- **Deploy.js:** The deployment script is available in the [LINK](https://github.com/JainArchit16/Ruse-Reveal/blob/main/Block3/scripts/deploy.js) file. It allows you to deploy the compiled contract onto the blockchain.
+
+## Deployment Link
+
+Explore the deployed BlockChain API's [GITHUB REPO](https://github.com/JainArchit16/BlockChain-Rating) and [DEPLOYMENT LINK](https://rating-web3.onrender.com/) to witness the decentralized review management system in action.
+
+## Features
+
+One notable feature of this BlockChain Review Manager is its ability to address issues related to dark patterns on websites. Users can directly add reviews of dark patterns observed on a site to the blockchain through the provided APIs. This ensures that the reviews are securely stored on the blockchain, preventing manipulation by website owners or any other entities.
+
+### Dark Pattern Review APIs
+
+To facilitate the submission and retrieval of dark pattern reviews, the BlockChain Review Manager provides the following APIs:
+
+1. **Get Reviews for a Specific Website:**
+   - **API Endpoint:** [https://rating-web3.onrender.com/getReviews/{website}](https://rating-web3.onrender.com/getReviews/{website})
+   - **Example Usage:** To retrieve reviews for Flipkart, use [https://rating-web3.onrender.com/getReviews/flipkart](https://rating-web3.onrender.com/getReviews/flipkart)
+   - **Description:** This API returns a list of reviews submitted for a specific website, allowing users to access and analyze the feedback related to dark patterns.
+
+2. **Get Review Count for a Specific Website:**
+   - **API Endpoint:** [https://rating-web3.onrender.com/getReviewCount/{website}](https://rating-web3.onrender.com/getReviewCount/{website})
+   - **Example Usage:** To get the review count for Flipkart, use [https://rating-web3.onrender.com/getReviewCount/flipkart](https://rating-web3.onrender.com/getReviewCount/flipkart)
+   - **Description:** This API provides the total count of reviews submitted for a particular website, offering an overview of the level of user engagement.
+
+3. **Get Average Rating for a Specific Website:**
+   - **API Endpoint:** [https://rating-web3.onrender.com/getAverageRating/{website}](https://rating-web3.onrender.com/getAverageRating/{website})
+   - **Example Usage:** To obtain the average rating for Flipkart, use [https://rating-web3.onrender.com/getAverageRating/flipkart](https://rating-web3.onrender.com/getAverageRating/flipkart)
+   - **Description:** This API calculates and returns the average rating based on the reviews submitted for a specific website, providing a quick snapshot of the overall user sentiment.
+
+Feel free to explore and integrate these APIs to enhance your experience with the BlockChain Review Manager.
+
+### How it Works
+
+1. **Identification of Dark Patterns:** Users identify and observe dark patterns on websites. These could be manipulative or deceptive design elements.
+
+2. **Direct Submission to Blockchain:** Using the BlockChain Review Manager, users can submit reviews of these dark patterns directly to the blockchain. The decentralized nature of the blockchain ensures that these reviews are tamper-resistant.
+
+3. **Immutable Record:** Once submitted, the reviews become part of an immutable record on the blockchain. This means that the information cannot be altered or manipulated by website owners or any external parties.
+
+4. **Transparent and Trustworthy:** The decentralized nature of blockchain technology adds transparency and trust to the review management process, ensuring that user feedback is genuine and cannot be influenced by external interests.
+
+## How to Contribute
+
+Feel free to contribute to the development of this project by forking the repository, making improvements, and creating pull requests. Your contributions are highly valued.
+
+---
+
+I hope this provides a clear and informative overview of your BlockChain Review Manager project. Feel free to modify it further based on your preferences and additional details you may want to include.
+
+![image](https://github.com/JainArchit16/Ruse-Reveal/assets/146457258/cd00322b-c55c-4945-816a-434d6b0e3a9a)
