@@ -185,6 +185,8 @@ Feel free to explore and integrate these APIs to enhance your experience with th
 
 4. **Transparent and Trustworthy:** The decentralized nature of blockchain technology adds transparency and trust to the review management process, ensuring that user feedback is genuine and cannot be influenced by external interests.
 
+![image](https://github.com/JainArchit16/Ruse-Reveal/assets/146457258/0d7753e8-1ed5-4c43-b12e-0078dfbe0ce5)
+
 ## How to Contribute
 
 Feel free to contribute to the development of this project by forking the repository, making improvements, and creating pull requests. Your contributions are highly valued.
@@ -193,4 +195,3 @@ Feel free to contribute to the development of this project by forking the reposi
 
 I hope this provides a clear and informative overview of your BlockChain Review Manager project. Feel free to modify it further based on your preferences and additional details you may want to include.
 
-![image](https://github.com/JainArchit16/Ruse-Reveal/assets/146457258/cd00322b-c55c-4945-816a-434d6b0e3a9a)
