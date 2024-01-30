@@ -1,4 +1,4 @@
-# React + Vite
+# React + ViteJS
 
 This is an Extension that helps to detect Dark Patterns On a Ecommerce Website.
 
